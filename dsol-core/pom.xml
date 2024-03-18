@@ -1,59 +1,62 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>nl.tudelft.simulation</groupId>
-    <artifactId>dsol</artifactId>
-    <version>4.2.1</version>
-  </parent>
+	<artifactId>dsol-core</artifactId>
+	<name>DSOL core project</name>
+	<description>DSOL classes for simulators and experiments for different formalisms</description>
+	<url>https://simulation.tudelft.nl/dsol/docs/latest/dsol-core</url>
 
-  <artifactId>dsol-core</artifactId>
-  <name>DSOL core project</name>
-  <description>DSOL classes for simulators and experiments for different formalisms</description>
-  <url>https://simulation.tudelft.nl/dsol/docs/latest/dsol-core</url>
+	<parent>
+		<groupId>nl.tudelft.simulation</groupId>
+		<artifactId>dsol</artifactId>
+		<version>4.2.1</version>
+		<relativePath>../dsol-parent</relativePath>
+	</parent>
 
-  <dependencies>
-    <dependency>
-      <groupId>nl.tudelft.simulation</groupId>
-      <artifactId>dsol-base</artifactId>
-    </dependency>
+	<dependencies>
+		<dependency>
+			<groupId>nl.tudelft.simulation</groupId>
+			<artifactId>dsol-base</artifactId>
+		</dependency>
 
-    <dependency>
-      <groupId>nl.tudelft.simulation</groupId>
-      <artifactId>dsol-naming</artifactId>
-    </dependency>
+		<dependency>
+			<groupId>nl.tudelft.simulation</groupId>
+			<artifactId>dsol-naming</artifactId>
+		</dependency>
 
-    <dependency>
-      <groupId>nl.tudelft.simulation</groupId>
-      <artifactId>dsol-animation</artifactId>
-    </dependency>
+		<dependency>
+			<groupId>nl.tudelft.simulation</groupId>
+			<artifactId>dsol-animation</artifactId>
+		</dependency>
 
-    <dependency>
-      <groupId>org.djutils</groupId>
-      <artifactId>djutils-cli</artifactId>
-    </dependency>
+		<dependency>
+			<groupId>org.djutils</groupId>
+			<artifactId>djutils-cli</artifactId>
+		</dependency>
 
-    <dependency>
-      <groupId>org.djutils</groupId>
-      <artifactId>djutils-stats</artifactId>
-    </dependency>
+		<dependency>
+			<groupId>org.djutils</groupId>
+			<artifactId>djutils-stats</artifactId>
+		</dependency>
 
-    <dependency>
-      <groupId>org.djutils</groupId>
-      <artifactId>djutils-data</artifactId>
-    </dependency>
+		<dependency>
+			<groupId>org.djutils</groupId>
+			<artifactId>djutils-data</artifactId>
+		</dependency>
 
-    <dependency>
-      <groupId>org.djunits</groupId>
-      <artifactId>djunits</artifactId>
-    </dependency>
+		<dependency>
+			<groupId>org.djunits</groupId>
+			<artifactId>djunits</artifactId>
+		</dependency>
 
-    <dependency>
-        <groupId>org.hamcrest</groupId>
-        <artifactId>hamcrest</artifactId>
-        <version>2.2</version>
-        <scope>test</scope>
-    </dependency>
-    
-  </dependencies>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest</artifactId>
+			<version>2.2</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
 </project>

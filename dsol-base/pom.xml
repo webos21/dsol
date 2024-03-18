@@ -1,22 +1,25 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>nl.tudelft.simulation</groupId>
-    <artifactId>dsol</artifactId>
-    <version>4.2.1</version>
-  </parent>
+	<artifactId>dsol-base</artifactId>
+	<name>DSOL base classes</name>
+	<description>Base classes for Distributed Simulation Object Library</description>
+	<url>https://simulation.tudelft.nl/dsol/docs/latest/dsol-base</url>
 
-  <artifactId>dsol-base</artifactId>
-  <name>DSOL base classes</name>
-  <description>Base classes for Distributed Simulation Object Library</description>
-  <url>https://simulation.tudelft.nl/dsol/docs/latest/dsol-base</url>
+	<parent>
+		<groupId>nl.tudelft.simulation</groupId>
+		<artifactId>dsol</artifactId>
+		<version>4.2.1</version>
+		<relativePath>../dsol-parent</relativePath>
+	</parent>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.djutils</groupId>
-      <artifactId>djutils-draw</artifactId>
-    </dependency>
-  </dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>org.djutils</groupId>
+			<artifactId>djutils-draw</artifactId>
+		</dependency>
+	</dependencies>
 
 </project>

@@ -1,23 +1,26 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>nl.tudelft.simulation</groupId>
-    <artifactId>dsol</artifactId>
-    <version>4.2.1</version>
-  </parent>
+	<artifactId>dsol-animation-gis</artifactId>
+	<name>DSOL Map Animation</name>
+	<description>DSOL map animation from ESRI Shapefile, GeoJson, Json, WKB and WKT</description>
+	<url>https://simulation.tudelft.nl/dsol/docs/latest/dsol-animation</url>
 
-  <artifactId>dsol-animation-gis</artifactId>
-  <name>DSOL Map Animation</name>
-  <description>DSOL map animation from ESRI Shapefile, GeoJson, Json, WKB and WKT</description>
-  <url>https://simulation.tudelft.nl/dsol/docs/latest/dsol-animation</url>
+	<parent>
+		<groupId>nl.tudelft.simulation</groupId>
+		<artifactId>dsol</artifactId>
+		<version>4.2.1</version>
+		<relativePath>../dsol-parent</relativePath>
+	</parent>
 
-  <dependencies>
+	<dependencies>
 
-    <dependency>
-      <groupId>nl.tudelft.simulation</groupId>
-      <artifactId>dsol-animation</artifactId>
-    </dependency>
+		<dependency>
+			<groupId>nl.tudelft.simulation</groupId>
+			<artifactId>dsol-animation</artifactId>
+		</dependency>
 
-  </dependencies>
+	</dependencies>
 </project>
